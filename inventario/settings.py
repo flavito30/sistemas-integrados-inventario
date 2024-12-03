@@ -73,18 +73,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'inventario.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE'),       # Variable generada automáticamente
-        'USER': os.environ.get('MYSQLUSER'),            # Variable generada automáticamente
-        'PASSWORD': os.environ.get('MYSQLPASSWORD'),    # Variable generada automáticamente
-        'HOST': os.environ.get('MYSQLHOST'),            # Variable generada automáticamente
-        'PORT': os.environ.get('MYSQLPORT'),            # Variable generada automáticamente
+        'NAME': 'railway',       # Variable generada automáticamente
+        'USER': 'root',            # Variable generada automáticamente
+        'PASSWORD': 'AteWvBLUVrpPaeaTRDeRkDpMfuCVZnlw',    # Variable generada automáticamente
+        'HOST': 'mysql.railway.internal',            # Variable generada automáticamente
+        'PORT': '3306',            # Variable generada automáticamente
     }
 }
 
